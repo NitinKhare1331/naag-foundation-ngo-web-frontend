@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NAAG FOUNDATION TRUST</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -11,43 +11,138 @@
         <!-- Responsive Navbar -->
         <nav class="bg-black shadow-md fixed top-0 w-full z-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-                <a href="#" class="text-2xl font-bold text-white">NAAG</a>
+                <div class="flex items-center justify-between h-16">
+                    
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <!-- <img href="#" class="h-[50px] w-[50px] rounded-full" alt="logo" src="./images/logo.jpg"> -->
+                        <a href="#" class="text-2xl font-bold text-white">NAAG</a>
+                    </div>
+            
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#home" class="text-white hover:text-[#f86f2d] font-medium">Home</a>
+                        <a href="#about" class="text-white hover:text-[#f86f2d] font-medium">About</a>
+                        <a href="#causes" class="text-white hover:text-[#f86f2d] font-medium">Service Areas</a>
+                        <a href="#donate" class="text-white hover:text-[#f86f2d] font-medium">Donate</a>
+                        <a href="#gallery" class="text-white hover:text-[#f86f2d] font-medium">Gallery</a>
+                        <a href="#events" class="text-white hover:text-[#f86f2d] font-medium">Events</a>
+                        <a href="#contact" class="text-white hover:text-[#f86f2d] font-medium">Contact</a>
+                    </div>
+            
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                    <button id="menu-toggle" type="button" class="text-white focus:outline-none">
+                        <i id="hamburger-icon" class="fa-solid fa-bars w-6 h-6 transition-all duration-300"></i>
+                    </button>
+                    </div>
                 </div>
-        
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-6">
-                <a href="#home" class="text-white hover:text-[#f86f2d] font-medium">Home</a>
-                <a href="#about" class="text-white hover:text-[#f86f2d] font-medium">About</a>
-                <a href="#causes" class="text-white hover:text-[#f86f2d] font-medium">Causes</a>
-                <a href="#donate" class="text-white hover:text-[#f86f2d] font-medium">Donate</a>
-                <a href="#gallery" class="text-white hover:text-[#f86f2d] font-medium">Gallery</a>
-                <a href="#events" class="text-white hover:text-[#f86f2d] font-medium">Events</a>
-                <a href="#contact" class="text-white hover:text-[#f86f2d] font-medium">Contact</a>
-                </div>
-        
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <i id="hamburger-icon" class="fa-solid fa-bars w-6 h-6 transition-all duration-300"></i>
-                </button>
-                </div>
-            </div>
             </div>
         
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out md:hidden px-4 text-center bg-black">
-            <a href="#home" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Home</a>
-            <a href="#about" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">About</a>
-            <a href="#causes" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Causes</a>
-            <a href="#donate" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Donate</a>
-            <a href="#gallery" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Gallery</a>
-            <a href="#events" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Events</a>
-            <a href="#contact" class="block py-2 text-white hover:text-[#f86f2d]">Contact</a>
+                <a href="#home" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Home</a>
+                <a href="#about" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">About</a>
+                <a href="#causes" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Service Areas</a>
+                <a href="#donate" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Donate</a>
+                <a href="#gallery" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Gallery</a>
+                <a href="#events" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Events</a>
+                <a href="#contact" class="block py-2 text-white hover:text-[#f86f2d]">Contact</a>
             </div>
         </nav>
+
+        <!-- Home Section / Hero -->
+        <section
+        id="home"
+        class="relative bg-center bg-no-repeat h-screen flex items-center justify-center"
+        style="
+            background-image: url('./images/banner.jpg');
+            background-size: clamp(1550px, 100%, 600px);
+        "
+        >
+        <!-- Overlay -->
+            <div class="absolute inset-0 bg-opacity-60"></div>
+
+        <!-- Content -->
+            <div class="relative z-10 text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Together We Can Make a Difference</h1>
+                <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto">
+                Join us in our mission to help the underprivileged and bring hope to communities in need.
+                </p>
+            </div>
+        </section>
+
+        <!-- Stats / Action Section -->
+        <section class="bg-white py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 -mt-32 relative z-10">
+            
+                    <!-- Box 1: Stats -->
+                    <div class="bg-[#F86F2D] text-black p-8 shadow-md">
+                    <h3 class="text-lg font-medium mb-2">Served Over</h3>
+                    <p class="text-5xl font-bold mb-2">12345</p>
+                    <p class="text-md">Children in different parts of India.</p>
+                    </div>
+            
+                    <!-- Box 2: Donate Money -->
+                    <div class="bg-[#FA8F3D] text-black p-8 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Donate Money</h3>
+                    <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts.</p>
+                    <a href="#donate" class="inline-block bg-white text-black font-semibold py-2 px-4 rounded shadow hover:shadow-md transition">Donate Now</a>
+                    </div>
+            
+                    <!-- Box 3: Volunteer -->
+                    <div class="bg-[#FAAA3A] text-black p-8 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Be a Volunteer</h3>
+                    <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts.</p>
+                    <a href="#volunteer" class="inline-block bg-white text-black font-semibold py-2 px-4 rounded shadow hover:shadow-md transition">Be A Volunteer</a>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-10 text-center">
+                
+                <!-- Card 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="text-[#F86F2D] mb-4">
+                        <i class="fas fa-hand-holding-heart text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Make Donation</h3>
+                        <p class="text-gray-600 max-w-xs">
+                            When you donate, you're not just giving, you're transforming lives, creating opportunities, and spreading hope to those who need it most.
+                        </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="text-[#F86F2D] mb-4">
+                        <i class="fas fa-hands-helping text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Become A Volunteer</h3>
+                    <p class="text-gray-600 max-w-xs">
+                        When you volunteer, you offer more than just your skills, you offer hope, compassion, and the chance for a brighter future.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="text-[#F86F2D] mb-4">
+                        <i class="fas fa-donate text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sponsorship</h3>
+                    <p class="text-gray-600 max-w-xs">
+                        Your sponsorship fuels the journey toward a better world, one where hope, opportunity, and change are within reach for all.
+                    </p>
+                </div>
+
+                </div>
+            </div>
+        </section>
     </div>
 
 
