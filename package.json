@@ -1,0 +1,25 @@
+{
+  "name": "naag-foundation-ngo-web-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NitinKhare1331/naag-foundation-ngo-web-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NitinKhare1331/naag-foundation-ngo-web-frontend/issues"
+  },
+  "homepage": "https://github.com/NitinKhare1331/naag-foundation-ngo-web-frontend#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
