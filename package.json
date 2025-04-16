@@ -21,8 +21,5 @@
   "homepage": "https://github.com/NitinKhare1331/naag-foundation-ngo-web-frontend#readme",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2"
   }
 }
