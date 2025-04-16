@@ -31,3 +31,43 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+
+const carousel = document.getElementById('carousel');
+
+let currentIndex = 0;
+
+const slides = Array.from(carousel.children);
+
+const originalSlideCount = slides.length;
+
+// Clone original slides
+slides.forEach(slide => {
+    const clone = slide.cloneNode(true);
+    carousel.appendChild(clone);
+});
+// Dynamic slide width
+function getSlideWidth() {
+    return carousel.children[0].getBoundingClientRect().width + 16; // 16 for px-2
+}
+
+function nextSlide() {
+    currentIndex++;
+    carousel.style.transition = 'transform 0.5s ease-in-out';
+    carousel.style.transform = `translateX(-${currentIndex * getSlideWidth()}px)`;
+
+    if (currentIndex === originalSlideCount) {
+        setTimeout(() => {
+        carousel.style.transition = 'none';
+        carousel.style.transform = 'translateX(0)';
+        currentIndex = 0;
+        }, 500);
+    }
+}
+
+setInterval(nextSlide, 3000);
+    window.addEventListener('resize', () => {
+    // Optional: Reset transform on resize to avoid weird spacing
+    carousel.style.transition = 'none';
+    carousel.style.transform = `translateX(-${currentIndex * getSlideWidth()}px)`;
+});
