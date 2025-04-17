@@ -1,6 +1,17 @@
 #carousel {
     scroll-snap-type: x mandatory;
 }
+
 .carousel-item {
     scroll-snap-align: start;
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.fade-enter-active {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
 }
