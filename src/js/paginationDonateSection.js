@@ -29,7 +29,7 @@ function renderCards(page) {
                 <h4 class="text-lg font-semibold">${d.name}</h4>
                 <p class="text-base mt-1">
                 Donated <span class="text-green-500 font-semibold">₹${d.amount}</span> for
-                <a href="#" class="text-orange-500 underline hover:text-orange-600">${d.cause}</a>
+                <a href="#" class="text-[#F86F2D] underline hover:text-orange-600">${d.cause}</a>
                 </p>
             </div>
             </div>
@@ -79,7 +79,7 @@ function renderPagination() {
         btn.textContent = i;
         btn.className = `w-9 h-9 rounded-full ${
             i === currentPage
-            ? "bg-orange-500 text-white font-semibold"
+            ? "bg-[#F86F2D] text-white font-semibold"
             : "border text-gray-600 hover:bg-gray-200"
         }`;
         btn.onclick = () => {
