@@ -11,7 +11,7 @@
 <body>
 
     <!-- Responsive Navbar -->
-    <div>
+    <header>
         <nav class="bg-black shadow-md fixed top-0 w-full z-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
@@ -30,6 +30,7 @@
                         <a href="#donate" class="text-white hover:text-[#f86f2d] font-medium">Donate</a>
                         <a href="#gallery" class="text-white hover:text-[#f86f2d] font-medium">Gallery</a>
                         <a href="#events" class="text-white hover:text-[#f86f2d] font-medium">Events</a>
+                        <a href="#volunteer" class="text-white hover:text-[#f86f2d] font-medium">Volunteer</a>
                         <a href="#contact" class="text-white hover:text-[#f86f2d] font-medium">Contact</a>
                     </div>
             
@@ -50,10 +51,11 @@
                 <a href="#donate" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Donate</a>
                 <a href="#gallery" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Gallery</a>
                 <a href="#events" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Events</a>
+                <a href="#volunteer" class="block py-2 text-white hover:text-[#f86f2d] border-b border-white">Volunteer</a>
                 <a href="#contact" class="block py-2 text-white hover:text-[#f86f2d]">Contact</a>
             </div>
         </nav>
-    </div>
+    </header>
 
     <!-- Home Section / Hero -->
     <div>
@@ -364,8 +366,8 @@
 
     <!-- Donation Section -->
     <div>
-        <section id="donate" class="relative bg-white lg:mb-12">
-            <div class="max-w-7xl mx-auto relative px-6 py-16 md:py-24 lg:h-[600px]">
+        <section id="donate" class="relative bg-white">
+            <div class="max-w-7xl mx-auto relative px-6 py-10 md:py-24 lg:h-[600px]">
             
                 <!-- Background image for md+ -->
                 <div class="hidden md:block absolute inset-0">
@@ -407,21 +409,95 @@
         </section>
 
         <!--Donation cards -->
+        <!--
         <section class="py-12 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
             
-                <!-- Donation Cards Container -->
+                
                 <div id="donation-cards" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-                    <!-- Cards will be injected here -->
+                    
                 </div>
             
-                <!-- Pagination Controls -->
+                
                 <div class="flex justify-center items-center space-x-2" id="pagination-controls">
-                    <!-- Buttons will be injected here -->
+                    
+                </div>
+            </div>
+        </section>
+        -->
+    </div>
+
+    
+
+
+
+
+
+
+    <!-- Volunteer -->
+    <div>
+        <section id="volunteer" class="bg-white py-0 md:py-16">
+            <div class="px-6 py-10 max-w-7xl relative mx-auto flex flex-col md:flex-row items-center gap-10">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl font-semibold text-blue-600 mb-6">Volunteer</h2>
+                    <p class="text-gray-800 text-md mb-4">
+                        Volunteer with us and you'll join a powerful movement of people united by one goal a better tomorrow, for everyone.
+                    </p>
+                    <p class="text-gray-800 text-md mb-4">
+                    Serve underprivileged people, organise events, raise donations, manage social media platforms & much more.
+                    </p>
+                    <p class="text-gray-800 text-md mb-6">
+                        You'll join a friendly team at the heart of your community.
+                    </p>
+                    <a href="#volunteer_page" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded shadow-md transition">
+                        Be a Volunteer
+                    </a>
+                </div>
+                <!-- Image -->
+                <div class="md:w-1/2">
+                    <img src="./images/volunteer/volunteer-group.jpg" alt="Volunteers Group" class="rounded-lg shadow-lg w-full object-cover">
                 </div>
             </div>
         </section>
     </div>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-black text-white py-12 px-6">
+        <div class="mx-auto flex items-center flex-col">
+            <!-- Heading -->
+            <h3 class="text-lg font-semibold tracking-wide mb-3 underline">HAVE A QUESTIONS?</h3>
+            <div class="w-20 border-t-2 border-white mb-6 md:mx-auto"></div>
+    
+            <!-- Contact Info -->
+            <ul class="space-y-4 text-gray-300 text-sm sm:text-base">
+                <li class="flex md:flex-row md:items-center md:justify-center gap-4 mb-4">
+                    <i class="fas fa-location-dot text-white mt-1"></i>
+                    <span>Sugar Mill Colony, Near Pani Tanki,<br> Village Baniyani, Hardoi (U.P) 241001</span>
+                </li>
+                <li class="flex items-start md:items-center md:justify-center gap-4 mb-4">
+                    <i class="fas fa-phone text-white mt-1 md:mt-0"></i>
+                    <a href="tel:+919454800204">+91 9454800204</a>
+                </li>
+                <li class="flex items-start md:items-center md:justify-center gap-4">
+                    <i class="fas fa-envelope text-white mt-1 md:mt-0"></i>
+                    <a href="mailto:naagfoundationhdi@gmail.com" target="_blank" class="hover:underline">naagfoundationhdi@gmail.com</a>
+                </li>
+            </ul>
+            <!-- Social Icons -->
+            <div class="mt-10 flex justify-center space-x-6">
+                <a href="#" class="bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center transition">
+                    <i class="fab fa-twitter text-white text-lg"></i>
+                </a>
+                <a href="#" class="bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center transition">
+                    <i class="fab fa-facebook-f text-white text-lg"></i>
+                </a>
+                <a href="#" class="bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center transition">
+                    <i class="fab fa-instagram text-white text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
 
