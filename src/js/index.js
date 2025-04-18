@@ -65,7 +65,7 @@ function nextSlide() {
     }
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 4000);
     window.addEventListener('resize', () => {
     // Optional: Reset transform on resize to avoid weird spacing
     carousel.style.transition = 'none';
