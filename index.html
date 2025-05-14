@@ -21,7 +21,7 @@
                         <!-- <img href="#" class="h-[50px] w-[50px] rounded-full" alt="logo" src="./images/logo.jpg"> -->
                         <a href="#" class="text-2xl font-bold text-white">NAAG</a>
                     </div>
-            
+                    
                     <!-- Desktop Menu -->
                     <div class="hidden md:flex space-x-6">
                         <a href="#home" class="text-white hover:text-[#f86f2d] font-medium">Home</a>
@@ -86,23 +86,23 @@
             
                     <!-- Box 1: Stats -->
                     <div class="bg-[#F86F2D] text-black p-8 shadow-md">
-                    <h3 class="text-lg font-medium mb-2">Served Over</h3>
-                    <p class="text-5xl font-bold mb-2">12345</p>
-                    <p class="text-md">Children in different parts of India.</p>
+                        <h3 class="text-lg font-medium mb-2">Served Over</h3>
+                        <p class="text-5xl font-bold mb-2">12345</p>
+                        <p class="text-md">Children in different parts of India.</p>
                     </div>
             
                     <!-- Box 2: Donate Money -->
                     <div class="bg-[#FA8F3D] text-black p-8 shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Donate Money</h3>
-                    <p class="mb-4">We make a living by what we get, but we make a life by what we give.</p>
-                    <a href="#donate" class="inline-block bg-white text-black font-semibold py-2 px-4 rounded shadow hover:shadow-md transition">Donate Now</a>
+                        <h3 class="text-xl font-semibold mb-2">Donate Money</h3>
+                        <p class="mb-4">We make a living by what we get, but we make a life by what we give.</p>
+                        <a href="#donate" class="inline-block bg-white text-black font-semibold py-2 px-4 rounded shadow hover:shadow-md transition">Donate Now</a>
                     </div>
             
                     <!-- Box 3: Volunteer -->
                     <div class="bg-[#FAAA3A] text-black p-8 shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Be a Volunteer</h3>
-                    <p class="mb-4">Volunteers don't get paid, not because they're worthless, but because they're priceless.</p>
-                    <a href="#volunteer" class="inline-block bg-white text-black font-semibold py-2 px-4 rounded shadow hover:shadow-md transition">Be A Volunteer</a>
+                        <h3 class="text-xl font-semibold mb-2">Be a Volunteer</h3>
+                        <p class="mb-4">Volunteers don't get paid, not because they're worthless, but because they're priceless.</p>
+                        <button class="openFormBtn inline-block bg-white text-black font-semibold py-2 px-4 rounded shadow hover:shadow-md transition">Be A Volunteer</button>
                     </div>
             
                 </div>
@@ -375,7 +375,7 @@
                         src="./images/donate/donateImg.jpg" alt="Donate Image"
                         class="w-full h-full object-cover rounded-lg" 
                     />
-                    <div class="absolute inset-0"></div>
+                    <div class="absolute inset-0"></div> 
                 </div>
 
                 <!-- Content area -->
@@ -645,9 +645,9 @@
                     <p class="text-gray-800 text-md mb-6">
                         You'll join a friendly team at the heart of your community.
                     </p>
-                    <a href="#volunteer_page" class="inline-block bg-[#f86f2d] hover:bg-orange-600 text-white font-bold py-3 px-6 rounded shadow-md transition">
+                    <button class="openFormBtn inline-block bg-[#f86f2d] hover:bg-orange-600 text-white font-bold py-3 px-6 rounded shadow-md transition hover:cursor-pointer">
                         Be a Volunteer
-                    </a>
+                    </button>
                 </div>
                 <!-- Image -->
                 <div class="md:w-1/2">
@@ -656,6 +656,67 @@
             </div>
         </section>
     </div>
+
+    <!-- Volunteer Form Modal Section -->
+    <section>
+        <div
+            id="volunteerModal"
+            class="fixed inset-0 bg-black z-50 hidden flex justify-center items-center overflow-y-auto"
+        >
+            <div class="bg-white bg-opacity-80 p-6 pt-10 rounded-xl shadow-2xl w-[90%] max-w-[400px] md:w-[400px] relative">
+
+                <div class="flex justify-between">
+                    <h2 class="text-xl font-semibold mb-4 text-left">Volunteer Form</h2>
+                    <i id="closeFormBtn" class="fa-solid fa-x"></i>
+                </div>
+
+                <form id="volunteerForm" class="space-y-4">
+                    <input
+                        type="text"
+                        id="nameInput"
+                        name="name"
+                        placeholder="Your Name"
+                        class="w-full border p-4 rounded"
+                        required
+                    />
+                    <input
+                        type="email"
+                        id="emailInput"
+                        name="email"
+                        placeholder="Your Email"
+                        class="w-full border p-4 rounded"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="numberInput"
+                        name="phone"
+                        maxlength="10"
+                        placeholder="Phone Number"
+                        class="w-full border p-4 rounded"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="aadhaarInput"
+                        name="aadhaar"
+                        maxlength="14"
+                        placeholder="AADHAAR"
+                        class="w-full border p-4 rounded"
+                        required
+                    />
+                    
+                    <button
+                        type="submit"
+                        class="bg-[#f86f2d] text-white py-2 px-4 rounded hover:bg-orange-600 w-full"
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact Section -->
     <footer id="contact" class="bg-black text-white py-12 px-6">
@@ -675,7 +736,7 @@
                 </li>
                 <li class="flex items-start md:items-center md:justify-center gap-4">
                     <i class="fas fa-envelope text-white mt-1 md:mt-0"></i>
-                    <a href="mailto:naagfoundationhdi@gmail.com" target="_blank" class="hover:underline">naagfoundationhdi@gmail.com</a>
+                    <a href="mailto:naagfoundationhdi@gmail.com" target="_blank" class="hover:underline">support@naagfoundationtrust.in</a>
                 </li>
             </ul>
             <!-- Social Icons -->
@@ -693,10 +754,8 @@
         </div>
     </footer>
 
-
-
-
     <script src="./src/js/index.js"></script>
     <script src="./src/js/paginationDonateSection.js"></script>
+    <script src="./src/js/volunteerFormModal.js"></script>
 </body>
 </html>
